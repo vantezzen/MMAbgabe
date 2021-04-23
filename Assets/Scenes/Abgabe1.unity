@@ -483,8 +483,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a0bc1fbac517466a86172f2356b13c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  geschwindigkeit: 15
-  drehGeschwindigkeit: 10
+  geschwindigkeit: 10
+  drehGeschwindigkeit: 5
 --- !u!54 &912975197
 Rigidbody:
   m_ObjectHideFlags: 0
