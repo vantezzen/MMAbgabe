@@ -52,7 +52,5 @@
         "ProjectSettings/":true,
         "temp/":true,
         "Temp/":true
-    },
-    "editor.fontFamily": "\"Comic Sans\", \"Comic Sans MS\", Menlo, Monaco, 'Courier New', monospace",
-    "editor.inlineHints.fontFamily": "\"Comic Sans\", \"Comic Sans MS\", Menlo, Monaco, 'Courier New', monospace"
+    }
 }
