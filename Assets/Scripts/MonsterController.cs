@@ -14,7 +14,7 @@ public class MonsterController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Vector3 currentLocation = transform.position;
         Vector3 targetPosition = target.position;

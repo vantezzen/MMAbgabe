@@ -17,7 +17,7 @@ public class PlayerControls : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         float moveHorizontal = Input.GetAxis("Horizontal") * Time.deltaTime * drehGeschwindigkeit;
         float moveVertical = Input.GetAxis("Vertical") * Time.deltaTime * geschwindigkeit;

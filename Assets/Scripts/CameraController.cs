@@ -17,7 +17,7 @@ public class CameraController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Vector3 positionGoal = target.TransformPoint(offsetVector);
         Vector3 currentPosition = transform.position;
