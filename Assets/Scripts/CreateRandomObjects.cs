@@ -16,14 +16,14 @@ public class CreateRandomObjects : MonoBehaviour
         for(int i = 0; i < 10; i++) {
             Transform coinObj = Instantiate(coin, boden.transform.position, Quaternion.identity);
             
-            coinObj.transform.SetParent(boden.transform);
+            // coinObj.transform.SetParent(coin.transform);
             coinObj.localPosition = new Vector3(
-                coinObj.localPosition.x + Random.Range(-1 * range, range),
-                coinObj.localPosition.y + 2,
-                coinObj.localPosition.z + Random.Range(-1 * range, range)
+                coinObj.localPosition.x + Random.Range(-1 * range / 1000, range / 1000),
+                coinObj.localPosition.y,
+                coinObj.localPosition.z + Random.Range(-1 * range / 1000, range / 1000)
             );
 
-            coinObj.transform.rotation = Quaternion.Euler(Random.Range(0, 365), Random.Range(0, 365), Random.Range(0, 365));
+            coinObj.transform.localRotation = Quaternion.Euler(Random.Range(0, 365), Random.Range(0, 365), Random.Range(0, 365));
         }
     }
 
