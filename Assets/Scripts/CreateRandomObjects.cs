@@ -5,7 +5,7 @@ using UnityEngine;
 public class CreateRandomObjects : MonoBehaviour
 {
     public Transform coin;
-    public GameObject boden;
+    public Transform boden;
 
     public float range = 4;
 
@@ -14,13 +14,12 @@ public class CreateRandomObjects : MonoBehaviour
     {
         // Erzuge 10 Coins mit Rotation
         for(int i = 0; i < 10; i++) {
-            Transform coinObj = Instantiate(coin, boden.transform.position, Quaternion.identity);
+            Transform coinObj = Instantiate(coin, coin.transform.position, Quaternion.identity, boden);
             
-            // coinObj.transform.SetParent(coin.transform);
             coinObj.localPosition = new Vector3(
-                coinObj.localPosition.x + Random.Range(-1 * range / 1000, range / 1000),
+                coinObj.localPosition.x + Random.Range(-1 * range, range),
                 coinObj.localPosition.y,
-                coinObj.localPosition.z + Random.Range(-1 * range / 1000, range / 1000)
+                coinObj.localPosition.z + Random.Range(-1 * range, range)
             );
 
             coinObj.transform.localRotation = Quaternion.Euler(Random.Range(0, 365), Random.Range(0, 365), Random.Range(0, 365));
