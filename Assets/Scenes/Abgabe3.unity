@@ -228,6 +228,8 @@ GameObject:
   m_Component:
   - component: {fileID: 446589568}
   - component: {fileID: 446589567}
+  - component: {fileID: 446589570}
+  - component: {fileID: 446589569}
   m_Layer: 0
   m_Name: Management
   m_TagString: Untagged
@@ -242,12 +244,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 446589566}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: efa7bb1d254a24862a2fbd3ff40b45f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 1955796488853407639}
+  boden: {fileID: 0}
+  range: 4
 --- !u!4 &446589568
 Transform:
   m_ObjectHideFlags: 0
@@ -262,6 +266,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &446589569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446589566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea7d7495833204790ba1d3a8755397f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ConversionMode: 0
+--- !u!114 &446589570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446589566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e3a63b40f2584b47aa4d663225a5ddc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anzahlDerCollectables: 10
+  collectablePrefab: {fileID: 1955796488853407634}
 --- !u!1 &687225786
 GameObject:
   m_ObjectHideFlags: 0
@@ -744,6 +775,8 @@ GameObject:
   - component: {fileID: 912975198}
   - component: {fileID: 912975197}
   - component: {fileID: 912975196}
+  - component: {fileID: 912975203}
+  - component: {fileID: 912975202}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -758,7 +791,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 912975195}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a0bc1fbac517466a86172f2356b13c1, type: 3}
   m_Name: 
@@ -860,6 +893,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &912975202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912975195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea7d7495833204790ba1d3a8755397f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ConversionMode: 1
+--- !u!114 &912975203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912975195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b53024b7a91149fbbccaae7c5b19146, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  rotationAngle: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
