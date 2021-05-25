@@ -292,7 +292,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anzahlDerCollectables: 10
-  collectablePrefab: {fileID: 1955796488853407634}
+  collectablePrefab: {fileID: 5748184847096617703, guid: 2d4f72bebd5f3478288d1bf8e6ae02a5,
+    type: 3}
 --- !u!1 &687225786
 GameObject:
   m_ObjectHideFlags: 0
@@ -1815,6 +1816,32 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1955796488853407636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955796488853407634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea7d7495833204790ba1d3a8755397f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ConversionMode: 0
+--- !u!114 &1955796488853407637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955796488853407634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c0efd60faee040a5a53271325ccabef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCollected: 0
 --- !u!4 &1955796488853407639 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7079827842691869042, guid: 2d4f72bebd5f3478288d1bf8e6ae02a5,
