@@ -11,12 +11,12 @@ public class PlayerBehaviourSystem : SystemBase
     {
         float hor = Input.GetAxis("Horizontal");
         float ver = Input.GetAxis("Vertical");
+        float elapsedTime = (float)Time.ElapsedTime;
 
         Entities
-            .WithAll<Rotation, Translation, PlayerComponent>()    
             .ForEach((ref Translation trans, ref PlayerComponent player, ref Rotation rot) =>
         {
-            player.rotationAngle += hor;
+            player.rotationAngle += hor / 10;
 
             float3 targetDirection = new float3(math.sin(player.rotationAngle), 0, math.cos(player.rotationAngle));
             rot.Value = quaternion.LookRotationSafe(targetDirection, new Vector3(0, 1, 0));
